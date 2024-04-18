@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/icon.ico">
+  <title>FAQ</title>
+  <style>
+    body{
+            background-color: #d0b594;
+            color: #324d6e;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+          }
+    .nav-item{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+          }
+    .dropdown-item{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+          }
+    .overlay { 
+            color:#fff;
+            position:absolute;
+            z-index:12;
+            top:15%;
+            left:10%;
+            text-align:left;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
+          }
+    .container{
+            padding-left: 1%;
+            padding-right: 1%;
+    }
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+    .overlay { 
+            color:#fff;
+            position:absolute;
+            z-index:12;
+            top:22.5%;
+            left:10%;
+            text-align:left;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
+          }
+    .container{
+            padding-left: 15%;
+            padding-right: 15%;
+    }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+          <!-- Links -->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="E-Learning" style="width:100px;" class="rounded-pill"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown">Courses</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+                <li><a class="dropdown-item" href="wellbeing.html">Well-Being</a></li>
+                <li><a class="dropdown-item" href="livingskills.html">Living Skills</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teachers.html">Our Teachers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" style="max-width:100%;height:auto;" >
+          <div class="carousel-item active justify-content-end">
+            <img src="./assets/hero1.jpg" alt="hero1" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/hero2.jpg" alt="hero2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/hero3.jpg" alt="hero3" class="d-block w-100">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+<div id="accordion">
+    <div class="topic" style="overflow:auto">
+        <h1 class="display-2" style="text-align: center;"><b>FAQ</b></h1>
+    </div> 
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  Do you do refund?
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  The platform is completely free for user, no refund is needed.
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                  How to become a teacher?
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Email to <a href="mailto: teacher@learn.co.uk">teacher@learn.co.uk</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  Will we meet the teacher face to face?
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  No, the courses will be completely online, Learn. is a E-Learning platform.
+                </div>
+              </div>
+            </div>
+          
+</div>
+    
+</body>
+<footer style="background-color: aliceblue;">
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <div class="container-fluid">
+      <!-- Links -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="E-Learning" style="width:100px;" class="rounded-pill"> 
+      </a>
+      </button>
+      <div class="d-flex justify-content-between" id="foot-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropup">
+          <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tech.html">Technology</a></li>
+            <li><a class="dropdown-item" href="wellbeing.html">Well-Being</a></li>
+            <li><a class="dropdown-item" href="livingskills.html">Living Skills</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teachers.html">Our Teachers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    </nav>
+    <p style="text-align: center;"> All Right Reserves 2024.</p>
+</footer>
+</html>
